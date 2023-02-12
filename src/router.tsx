@@ -17,7 +17,7 @@ import NotFound from "./pages/NotFound/NotFound";
 export default function MyRouter() {
     return (
         <Routes>
-            <Route path="letsmeet">
+            <Route path="lets-meet">
                 <Route path="" element={<Main />}></Route>
                 {/* Login */}
                 {/* Register */}
