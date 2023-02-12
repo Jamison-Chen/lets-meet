@@ -1,0 +1,78 @@
+@use "global_variables" as _;
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: _.$base-font-size;
+    color: _.$deep-gray;
+    letter-spacing: _.$base-letter-spacing;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, monospace;
+    border-radius: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+*,
+*:before,
+*:after {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+#loading-root {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: _.$white;
+    user-select: none;
+    transition-delay: 200ms;
+    &.active {
+        display: flex;
+        opacity: 0.7;
+        z-index: 6;
+    }
+    &.hidden {
+        opacity: 0;
+        z-index: -1;
+    }
+    & > #loading_animation {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 5%;
+        max-width: 40px;
+    }
+}
