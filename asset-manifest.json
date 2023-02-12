@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lets-meet/static/css/main.b5717f93.css",
+    "main.js": "/lets-meet/static/js/main.05e1a2cb.js",
+    "static/js/787.8bae3f2c.chunk.js": "/lets-meet/static/js/787.8bae3f2c.chunk.js",
+    "index.html": "/lets-meet/index.html",
+    "main.b5717f93.css.map": "/lets-meet/static/css/main.b5717f93.css.map",
+    "main.05e1a2cb.js.map": "/lets-meet/static/js/main.05e1a2cb.js.map",
+    "787.8bae3f2c.chunk.js.map": "/lets-meet/static/js/787.8bae3f2c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5717f93.css",
+    "static/js/main.05e1a2cb.js"
+  ]
+}
